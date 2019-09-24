@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--- font fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/css/mdb.min.css" rel="stylesheet">
+  <!--- Gooogle font -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+  <!--- custom css file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<title>admin dashboard</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3>MENU</h3>
+      </div>
+      <ul class="list-unstyled components">
+        <li class="active">
+          <a href="#managementSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Information Management</a>
+          <ul class="collapse list-unstyled" id="managementSubmenu">
+            <li>
+              <a href="#">home1</a>
+            </li>
+            <li>
+              <a href="#">home2</a>
+            </li>
+            <li>
+              <a href="#">home3</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#recipeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Recipe management</a>
+          <ul class="collapse list-unstyled" id="recipeSubmenu">
+            <li>
+              <a href="#">page1</a>
+            </li>
+            <li>
+              <a href="#">page2</a>
+            </li>
+            <li>
+              <a href="#">page3</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#productionSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">production management</a>
+          <ul class="collapse list-unstyled" id="productionSubmenu">
+            <li>
+              <a href="#">page1</a>
+            </li>
+            <li>
+              <a href="#">page2</a>
+            </li>
+            <li>
+              <a href="#">page3</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#reportSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Report Analysis</a>
+          <ul class="collapse list-unstyled" id="reportSubmenu">
+            <li>
+              <a href="#">page1</a>
+            </li>
+            <li>
+              <a href="#">page2</a>
+            </li>
+            <li>
+              <a href="#">page3</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#inventorySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Inventory Management</a>
+          <ul class="collapse list-unstyled" id="inventorySubmenu">
+            <li>
+              <a href="#">page1</a>
+            </li>
+            <li>
+              <a href="#">page2</a>
+            </li>
+            <li>
+              <a href="#">page3</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#adminSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Administrator</a>
+          <ul class="collapse list-unstyled" id="adminSubmenu">
+            <li>
+              <a href="#">page1</a>
+            </li>
+            <li>
+              <a href="#">page2</a>
+            </li>
+            <li>
+              <a href="#">page3</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+              <i class="fa fa-align-justify"></i>
+            </button>
+
+            <a href=""><img src="img/logo.jpg" alt=""></a>
+
+            <!--<a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                </li>
+                <li class="nav-item">
+                  <strong>Filter By:</strong><input type="date" name="" value="date">
+                  <button type="button" class="btn btn-primary">Logout</button>
+                </li>
+
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="popupbutton">
+              <button type="button" style="background-color:#689F38; name=" button"><a href="#">Production Plan</a></button>
+              <button type="button" style="background-color:#689F38; name=" button"><a href="#">Packing List</a></button>
+              <button type="button" style="background-color:#689F38; name=" button"><a href="#">Management</a></button>
+            </div>
+            <div class="daily-header" style="background-color:#008000">
+              <i class="">DAILY TOTALS</i>
+            </div>
+            <table class="table ">
+              <tbody>
+                <tr>
+                  <td>Total # Of Finished Products:</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>varlety:</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Total Raw Materials:</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Total Plans Made:</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Total # of Compled Plans:</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td># of Orders:</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Average % of Defctive Products:</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Workflow in Progress:</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Delay:</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Completed:</td>
+                  <td>0</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-4">
+            <div class="rawmataerils-header" style="background-color:#008000">
+              <i class="">RAW MATERIALS TO PURCHASE</i>
+            </div>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Product</th>
+                  <th scope="col">Have</th>
+                  <th scope="col">Need</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cream</td>
+                  <td>-16.77 kg</td>
+                  <td>16.82 kg</td>
+                </tr>
+                <tr>
+                  <td>Cream</td>
+                  <td>-16.77 kg</td>
+                  <td>16.82 kg</td>
+                </tr>
+                <tr>
+                  <td>Cream</td>
+                  <td>-16.77 kg</td>
+                  <td>16.82 kg</td>
+                </tr>
+                <tr>
+                  <td>Cream</td>
+                  <td>-16.77 kg</td>
+                  <td>16.82 kg</td>
+                </tr>
+                <tr>
+                  <td>Cream</td>
+                  <td>-16.77 kg</td>
+                  <td>16.82 kg</td>
+                </tr>
+
+              </tbody>
+            </table>
+            <div class="card mb-3">
+              <div class="linechart-header" style="background-color:#7EB6EA">
+                <i class="">LINE GRAPH TITLE</i>
+              </div>
+              <div class="card-body">
+                <canvas id="lineChart"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="percent3d-header" style="background-color:#8CC63F">
+                <i class="">LINE GRAPH TITLE</i>
+              </div>
+              <div class="card-body">
+                <div id="chartContainer" style="height: 370px; width: 100%;">
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="yearchart-header" style="background-color:#008000" ;text-align:"center">
+                  <i class="">LINE GRAPH TITLE</i>
+                </div>
+                <div class="card-body">
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/js/mdb.min.js"></script>
+  <!-- canvasjs core JavaScript -->
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+  <!-- Slide Menu function--->
+
+  <script>
+    $(document).ready(function() {
+      $('#sidebarCollapse').on('click', function() {
+        $('#sidebar').toggleClass('active');
+      });
+    });
+  </script>
+
+
+  <!--- 3d chart function -->
+  <script>
+    window.onload = function() {
+
+      var chart = new CanvasJS.Chart("chartContainer", {
+        theme: "light2",
+        animationEnabled: true,
+        title: {
+          text: ""
+        },
+        subtitles: [{
+          text: "",
+          fontSize: 16
+        }],
+        data: [{
+          type: "pie",
+          indexLabelFontSize: 18,
+          radius: 80,
+          indexLabel: "{label} - {y}",
+          yValueFormatString: "###0.0\"%\"",
+          click: explodePie,
+          dataPoints: [{
+              y: 42,
+              label: "Level1"
+            },
+            {
+              y: 21,
+              label: "Level2"
+            },
+            {
+              y: 24.5,
+              label: "Leve3"
+            },
+            {
+              y: 30.1,
+              label: "level4"
+            }
+          ]
+        }]
+      });
+      chart.render();
+
+      function explodePie(e) {
+        for (var i = 0; i < e.dataSeries.dataPoints.length; i++) {
+          if (i !== e.dataPointIndex)
+            e.dataSeries.dataPoints[i].exploded = false;
+        }
+      }
+
+    }
+  </script>
+
+  <!-- Line chart js -->
+  <script>
+    var ctxL = document.getElementById("lineChart").getContext('2d');
+    var gradientFill = ctxL.createLinearGradient(0, 0, 0, 290);
+    gradientFill.addColorStop(0, "rgba(173, 53, 186, 1)");
+    gradientFill.addColorStop(1, "rgba(173, 53, 186, 0.1)");
+    var myLineChart = new Chart(ctxL, {
+      type: 'line',
+      data: {
+        labels: ["Level", "Your Text", "Level", "Level", "Level", "Level"],
+        datasets: [{
+          label: "My First dataset",
+          data: [0, 65, 45, 65, 35, 65, 0],
+          backgroundColor: gradientFill,
+          borderColor: [
+            '#AD35BA',
+          ],
+          borderWidth: 2,
+          pointBorderColor: "#fff",
+          pointBackgroundColor: "rgba(173, 53, 186, 0.1)",
+        }]
+      },
+      options: {
+        responsive: true
+      }
+    });
+  </script>
+
+  <!--- Yearly Chart JS -->
+  <script>
+    var ctx = document.getElementById("myChart").getContext('2d');
+
+
+    var data = [66000, 141000, 240000, 333000, 428000, 513000, 617000];
+
+    var labels = ["2010", "2011", "2012", "2013", "2018", "2018"];
+
+
+    // End Defining data
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'Population', // Name the series
+          data: data, // Specify the data values array
+          backgroundColor: [ // Specify custom colors
+            'rgba(0, 128, 0)',
+            'rgba(0, 128, 0)',
+            'rgba(0, 128, 0)',
+            'rgba(0, 128, 0)',
+            'rgba(0, 128, 0)',
+            'rgba(0, 128, 0)',
+          ],
+          borderColor: [ // Add custom color borders
+            'rgba(255,99,132,1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
+          ],
+          borderWidth: 1 // Specify bar border width
+        }]
+      },
+      options: {
+        responsive: true, // Instruct chart js to respond nicely.
+        maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height
+      }
+    });
+  </script>
+</body>
+
+</html>
